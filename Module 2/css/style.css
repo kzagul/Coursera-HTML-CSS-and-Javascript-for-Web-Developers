@@ -1,0 +1,90 @@
+/* general styles */
+
+body {
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+
+/* .titanium, .uranium, .francium */
+article   {
+    border: 1px solid black;
+    background-color: #999999;
+    margin: 10px;
+}
+
+article > h2 {
+    float: right;
+
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+
+    margin: 0;
+    padding-top: 10px;
+
+    width: 180px;
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    height: 35px;
+}
+
+.titanium > h2 {
+    background-color: #ca78bf;
+}
+
+.uranium  > h2 {
+    background-color: #c33737;
+}
+
+.francium  > h2 {
+    background-color: #b6b842;
+}
+
+article > p {
+    padding: 40px 15px 15px 15px;
+}
+
+.block {
+    width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .mobile-block {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .desktop-block {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .tablet-block-top {
+        width: 50%;
+        float: left;
+    }
+    .tablet-block-down {
+        width: 100%;
+        float: left;
+    }
+}
+
+
